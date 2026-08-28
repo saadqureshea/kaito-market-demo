@@ -1,0 +1,308 @@
+// Seed catalog for Kaito Market.
+// In a full-stack build this would come from an API; here it is bundled and
+// merged with any user-created listings stored in localStorage.
+
+export const CATEGORIES = [
+  "Electronics",
+  "Fashion",
+  "Home & Kitchen",
+  "Sports & Outdoors",
+  "Books",
+  "Beauty",
+  "Toys & Games",
+  "Automotive",
+];
+
+const img = (id, w = 800) =>
+  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=70`;
+
+export const SEED_PRODUCTS = [
+  {
+    id: "p-1001",
+    title: "Wireless Noise-Cancelling Headphones",
+    price: 129.99,
+    category: "Electronics",
+    rating: 4.7,
+    stock: 24,
+    seller: "AudioHub",
+    image: img("1505740420928-5e560c06d30e"),
+    description:
+      "Over-ear Bluetooth headphones with active noise cancellation, 30-hour battery life and a comfortable memory-foam headband. Perfect for travel and focused work.",
+  },
+  {
+    id: "p-1002",
+    title: "Smart Fitness Watch",
+    price: 89.0,
+    category: "Electronics",
+    rating: 4.4,
+    stock: 40,
+    seller: "GearLoop",
+    image: img("1523275335684-37898b6baf30"),
+    description:
+      "Track heart rate, sleep, steps and 20+ workout modes. 1.4\" AMOLED display, 7-day battery and 5ATM water resistance.",
+  },
+  {
+    id: "p-1003",
+    title: "Mechanical Keyboard (Hot-Swappable)",
+    price: 74.5,
+    category: "Electronics",
+    rating: 4.8,
+    stock: 15,
+    seller: "KeyCraft",
+    image: img("1541140532154-b024d705b90a"),
+    description:
+      "Compact 75% layout, hot-swappable switches, PBT keycaps and per-key RGB. USB-C detachable cable included.",
+  },
+  {
+    id: "p-1004",
+    title: "1080p Webcam with Ring Light",
+    price: 39.99,
+    category: "Electronics",
+    rating: 4.2,
+    stock: 60,
+    seller: "GearLoop",
+    image: img("1587826080692-f439cd0b70da"),
+    description:
+      "Full HD webcam with built-in adjustable ring light, auto-focus and a privacy shutter. Plug-and-play on Windows and macOS.",
+  },
+  {
+    id: "p-1005",
+    title: "Classic Denim Jacket",
+    price: 54.0,
+    category: "Fashion",
+    rating: 4.5,
+    stock: 30,
+    seller: "NorthThreads",
+    image: img("1543076447-215ad9ba6923"),
+    description:
+      "Unisex mid-wash denim jacket with a relaxed fit, button front and chest pockets. 100% cotton, pre-shrunk.",
+  },
+  {
+    id: "p-1006",
+    title: "Running Shoes - Lightweight",
+    price: 68.9,
+    category: "Fashion",
+    rating: 4.6,
+    stock: 22,
+    seller: "PaceLab",
+    image: img("1542291026-7eec264c27ff"),
+    description:
+      "Breathable knit upper, responsive foam midsole and a durable rubber outsole. Weighs just 240g per shoe.",
+  },
+  {
+    id: "p-1007",
+    title: "Leather Minimalist Wallet",
+    price: 25.0,
+    category: "Fashion",
+    rating: 4.3,
+    stock: 80,
+    seller: "NorthThreads",
+    image: img("1627123424574-724758594e93"),
+    description:
+      "Full-grain leather bifold with RFID-blocking lining. Holds 8 cards plus cash. Ages beautifully with use.",
+  },
+  {
+    id: "p-1008",
+    title: "Stainless Steel Cookware Set (10-pc)",
+    price: 149.0,
+    category: "Home & Kitchen",
+    rating: 4.7,
+    stock: 12,
+    seller: "HearthGoods",
+    image: img("1584990347449-a2d4c2c9b3f9"),
+    description:
+      "Tri-ply stainless steel pots and pans with ergonomic handles. Induction-ready and dishwasher safe.",
+  },
+  {
+    id: "p-1009",
+    title: "Pour-Over Coffee Maker",
+    price: 32.5,
+    category: "Home & Kitchen",
+    rating: 4.5,
+    stock: 45,
+    seller: "HearthGoods",
+    image: img("1495474472287-4d71bcdd2085"),
+    description:
+      "Borosilicate glass carafe with a reusable stainless filter. Brews up to 4 cups of clean, bright coffee.",
+  },
+  {
+    id: "p-1010",
+    title: "Scented Soy Candle - Cedar & Sage",
+    price: 18.0,
+    category: "Home & Kitchen",
+    rating: 4.6,
+    stock: 100,
+    seller: "EmberCo",
+    image: img("1602874801007-bd458bb1b8b6"),
+    description:
+      "Hand-poured soy wax candle with a cotton wick. 50-hour burn time and a warm, woody aroma.",
+  },
+  {
+    id: "p-1011",
+    title: "Yoga Mat - Extra Thick",
+    price: 29.99,
+    category: "Sports & Outdoors",
+    rating: 4.4,
+    stock: 55,
+    seller: "PaceLab",
+    image: img("1592432678016-e910b452f9a2"),
+    description:
+      "6mm high-density TPE mat with a non-slip textured surface. Lightweight, odourless and comes with a carry strap.",
+  },
+  {
+    id: "p-1012",
+    title: "Insulated Water Bottle 1L",
+    price: 22.0,
+    category: "Sports & Outdoors",
+    rating: 4.8,
+    stock: 70,
+    seller: "TrailKit",
+    image: img("1602143407151-7111542de6e8"),
+    description:
+      "Double-wall vacuum insulation keeps drinks cold 24h or hot 12h. Leak-proof lid and powder-coated finish.",
+  },
+  {
+    id: "p-1013",
+    title: "2-Person Camping Tent",
+    price: 95.0,
+    category: "Sports & Outdoors",
+    rating: 4.3,
+    stock: 18,
+    seller: "TrailKit",
+    image: img("1504280390367-361c6d9f38f4"),
+    description:
+      "Freestanding dome tent with a full-coverage rainfly, 2.1kg packed weight and a 3-minute pitch.",
+  },
+  {
+    id: "p-1014",
+    title: "The Pragmatic Programmer (20th Anniversary)",
+    price: 34.99,
+    category: "Books",
+    rating: 4.9,
+    stock: 26,
+    seller: "PageTurners",
+    image: img("1512820790803-83ca734da794"),
+    description:
+      "A modern classic on software craftsmanship. Hardcover, 352 pages, updated with new material for today's developers.",
+  },
+  {
+    id: "p-1015",
+    title: "Atomic Habits",
+    price: 16.2,
+    category: "Books",
+    rating: 4.8,
+    stock: 90,
+    seller: "PageTurners",
+    image: img("1544716278-ca5e3f4abd8c"),
+    description:
+      "James Clear's practical guide to building good habits and breaking bad ones, one small change at a time.",
+  },
+  {
+    id: "p-1016",
+    title: "Vitamin C Brightening Serum",
+    price: 21.5,
+    category: "Beauty",
+    rating: 4.4,
+    stock: 65,
+    seller: "GlowRoom",
+    image: img("1620916566398-39f1143ab7be"),
+    description:
+      "15% vitamin C with hyaluronic acid and vitamin E. Lightweight, fast-absorbing and suitable for daily use.",
+  },
+  {
+    id: "p-1017",
+    title: "Bamboo Hair Brush Set",
+    price: 14.0,
+    category: "Beauty",
+    rating: 4.2,
+    stock: 120,
+    seller: "GlowRoom",
+    image: img("1522337660859-02fbefca4702"),
+    description:
+      "Detangling paddle brush plus a round styling brush. Natural bamboo bristles reduce frizz and static.",
+  },
+  {
+    id: "p-1018",
+    title: "Wooden Building Blocks (100 pieces)",
+    price: 27.99,
+    category: "Toys & Games",
+    rating: 4.7,
+    stock: 38,
+    seller: "PlayNest",
+    image: img("1558060370-d644479cb6f7"),
+    description:
+      "Smooth, non-toxic painted hardwood blocks in a reusable canvas bag. Ages 3+.",
+  },
+  {
+    id: "p-1019",
+    title: "Strategy Board Game - Settlers Edition",
+    price: 42.0,
+    category: "Toys & Games",
+    rating: 4.6,
+    stock: 20,
+    seller: "PlayNest",
+    image: img("1611996575749-79a3a250f948"),
+    description:
+      "Trade, build and settle. 3-4 players, 60-90 minutes per game. Includes updated rulebook and wooden pieces.",
+  },
+  {
+    id: "p-1020",
+    title: "Car Phone Mount - Magnetic",
+    price: 15.99,
+    category: "Automotive",
+    rating: 4.1,
+    stock: 140,
+    seller: "DriveGear",
+    image: img("1449965408869-eaa3f722e40d"),
+    description:
+      "Strong N52 magnets, 360-degree rotation and a vent clip that won't block airflow. Fits phones up to 7\".",
+  },
+  {
+    id: "p-1021",
+    title: "Portable Tyre Inflator",
+    price: 46.5,
+    category: "Automotive",
+    rating: 4.5,
+    stock: 33,
+    seller: "DriveGear",
+    image: img("1568605117036-5fe5e7bab0b7"),
+    description:
+      "Cordless 12V compressor with a digital gauge, auto-stop and an LED work light. Inflates a car tyre in ~4 minutes.",
+  },
+  {
+    id: "p-1022",
+    title: "4K Action Camera",
+    price: 112.0,
+    category: "Electronics",
+    rating: 4.3,
+    stock: 17,
+    seller: "AudioHub",
+    image: img("1526170375885-4d8ecf77b99f"),
+    description:
+      "4K/60fps recording, electronic image stabilisation and a waterproof case rated to 30m. Wi-Fi and app control.",
+  },
+  {
+    id: "p-1023",
+    title: "Weighted Blanket 7kg",
+    price: 59.0,
+    category: "Home & Kitchen",
+    rating: 4.6,
+    stock: 28,
+    seller: "HearthGoods",
+    image: img("1522771739844-6a9f6d5f14af"),
+    description:
+      "Breathable cotton shell with evenly distributed glass beads. Includes a removable, washable duvet cover.",
+  },
+  {
+    id: "p-1024",
+    title: "Adjustable Dumbbell (Single, 24kg)",
+    price: 129.0,
+    category: "Sports & Outdoors",
+    rating: 4.5,
+    stock: 14,
+    seller: "PaceLab",
+    image: img("1517836357463-d25dfeac3438"),
+    description:
+      "Dial in 2.5kg to 24kg in seconds. Replaces 15 dumbbells and stores on the included cradle.",
+  },
+];
